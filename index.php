@@ -13,6 +13,12 @@ print $result . "<br>";
 
 $sakinys = 'Labas. mano. vardas. yra. Rimvydas';
 $sakinys = str_replace(".", " ", $sakinys);
-print $sakinys;
+print $sakinys . "<br>";
+
+// " 3 uzduotis: sukurti stringa, kuris susidarytu is sakinio. Jame turi egzistuoti didziosios ir mazosios raides. Panaudoti php default'ine funkciją kuri visas stringo raides paverstu didziosiomis arba mazosiomis"
+
+$third = 'Trecios uzduoties sakinys Su raidemis';
+$big = strtoupper($third);
+print $big  . "<br>";
 
  ?>
