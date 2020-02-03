@@ -1,24 +1,34 @@
 <?php 
 
-// Pirma uzduotis
-$string = 'Šios dienos data - ';
-$date = date('yy/m/d') ;
-$result = $string . $date;
-print $result . "<br>";
+$target = 'Ketvirtadienis';
+$targetUp =strtoupper($target);
 
-// Antra uzduotis
-// "2. Sukurti sakini is 5< zodziu.
-// po kiekvieno zodzio yra padetas taskas.
-// naudojant bazines php funkcijas tuos taskus pakeisti i tarpus."
+switch ($targetUp) {
+	case 'Pirmadienis':
+		print 'Pirmadienis';
+		break;
+	case 'Antradienis':
+		print 'Antradienis';
+		break;
+	case 'Treciadienis':
+		print 'Treciadienis';
+		break;
+	case 'KETVIRTADIENIS':
+		print 'Mazasis penktadienis';
+		break;
+	case 'Penktadienis':
+		print 'Savaitgalio pradzia';
+		break;	
+	case 'Sestadienis':
+		print 'Sestadienis';
+		break;	
+	case 'Sekmadienis':
+		print 'Sekmadienis';
+		break;	
+	default:
+		print 'Nera tokios savaites dienos';
+		break;
+}
 
-$sakinys = 'Labas. mano. vardas. yra. Rimvydas';
-$sakinys = str_replace(".", " ", $sakinys);
-print $sakinys . "<br>";
-
-// " 3 uzduotis: sukurti stringa, kuris susidarytu is sakinio. Jame turi egzistuoti didziosios ir mazosios raides. Panaudoti php default'ine funkciją kuri visas stringo raides paverstu didziosiomis arba mazosiomis"
-
-$third = 'Trecios uzduoties sakinys Su raidemis';
-$big = strtoupper($third);
-print $big  . "<br>";
 
  ?>
