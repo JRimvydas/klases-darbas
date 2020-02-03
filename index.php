@@ -1,5 +1,8 @@
 <?php 
 
-print 'Šios dienos data yra ' .date("y/m/d"). "<br>";
+$string = 'Šios dienos data - ';
+$date = date('yy/m/d') ;
+$result = $string . $date;
+print $result;
 
  ?>
